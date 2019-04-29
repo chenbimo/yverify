@@ -1,4 +1,4 @@
-const yverify = require('./yverify');
+const Y = require('./yverify');
 /* let res = yverify([
 	{
 		name:'名称',
@@ -16,16 +16,17 @@ const yverify = require('./yverify');
 		value:6
 	}
 ]); */
-let res = yverify([
+let res = Y.Verify([
 	{
 		name:'名称',
 		rules:{
-			method:['Is'],
-			test:[
-				[1,2,6]
+			method:['IS','NOT'],
+			assert:[
+				Y.Assert.inEmpty,
+                Y.Assert.inNumber
 			]
 		},
-		value:6
+		value:' ddd'
 	}
 ]);
 console.dir(res);
