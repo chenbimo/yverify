@@ -1,16 +1,17 @@
-// 验证插件
-// =====判断======
+// yverify 验证插件
+// ==相等性======================
 // IsEqual IS Is is 等于
 // NotEqual NOT Not not 不等于
+// ==包含性验证==================
 // Include IN In in 包含
 // Exclude EX Ex ex 不包含
-// =====比较======
+// ==比较大小====================
 // Miniumn MIN Min min 最小值
 // Maxiumn MXN Mxn mxn 最大值
-// ===============
+// ==比较长度====================
 // MinLeng MIL Mil mil 最小长度
 // MaxLeng MXL Mxl mxl 最大长度
-// ===============
+// ==============================
 // 使用方式
 /*
 Yverify([
