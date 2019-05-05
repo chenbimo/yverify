@@ -1,32 +1,38 @@
+/**
+ * 使用案例
+ * res返回值为true，则通过测试
+ */
 const Y = require('./yverify');
-/* let res = yverify([
-	{
-		name:'名称',
-		rules:{
-			method:['Is','In','Ex','Min','Mxn','Mxl'],
-			test:[
-				['1','2','3','_empty'],
-				['2889'],
-				//6,
-				1,
-				10,
-				3
-			]
-		},
-		value:6
-	}
-]); */
 let res = Y.Verify([
 	{
-		name:'名称',
-		rules:{
-			method:['IS','NOT'],
-			assert:[
-				Y.Assert.inEmpty,
-                Y.Assert.inNumber
+		name: '用户名',
+		rules: {
+			method: ['IsEqual'],
+			assert: [
+				Y.Assert.notEmpty
 			]
 		},
-		value:' ddd'
+		value: 'chensuiyi'
+	},
+	{
+		name: '密码',
+		rules: {
+			method: ['IsEqual'],
+			assert: [
+				Y.Assert.notEmpty
+			]
+		},
+		value: 'chensuiyi'
+	},
+	{
+		name: '邮箱',
+		rules: {
+			method: ['IsEqual'],
+			assert: [
+				Y.Assert.notEmpty
+			]
+		},
+		value: 'bimostyle@qq.com'
 	}
 ]);
 console.dir(res);
