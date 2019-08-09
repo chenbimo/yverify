@@ -26,7 +26,7 @@ let res = Y.Verify([
         name: "邮箱",
         rules: {
             IsEqual: Y.RegExp.isEmail,
-            MinLength: 6,
+            MinLength: 1,
             MaxLength: 32
         },
         value: "bimostyle@qq.com",
